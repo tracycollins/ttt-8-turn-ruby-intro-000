@@ -42,7 +42,7 @@ def input_to_index(input)
   return index
 end
 
-def ask_for_input()
+def ask_for_input
   user_input = gets.chomp
   index = user_input.to_i
   return index
