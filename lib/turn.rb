@@ -9,6 +9,7 @@ def turn(board)
     if valid_move?(board, index)
       move_is_valid = true
       move(board, index, value)
+      display_board(board)
       value = "O"
     end
   end
