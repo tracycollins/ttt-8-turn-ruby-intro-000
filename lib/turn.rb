@@ -8,6 +8,8 @@ end
 
 def ask_for_input()
   user_input = gets.chomp
+  index = user_input.to_i
+  return index
 end
 
 def display_board(board)
