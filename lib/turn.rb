@@ -2,6 +2,17 @@ def turn(board)
   display_board(board)
 end
 
+def valid_move?(board, index)
+end
+
+def position_taken?(board, index)
+  if (board[index] == "X" || board[index] == "O")
+    return true
+  else
+    return false
+  end
+end
+
 def input_to_index(input)
   index = input.to_i - 1
   return index
