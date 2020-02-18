@@ -1,8 +1,16 @@
 def turn(board)
   display_board(board)
-  puts "Please enter 1-9:"
-  input = ask_for_input
-  index = input_to_index(input)
+  move_is_valid = false
+  until move_is_valid do
+    puts "Please enter 1-9:"
+    input = ask_for_input
+    index = input_to_index(input)
+    if valid_move?(board, index)
+      move_is_valid = true
+      move(board, index, value))
+      value = "O"
+    end
+  end
 end
 
 def move(board, index, value = "X")
