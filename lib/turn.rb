@@ -2,6 +2,10 @@ def turn(board)
   display_board(board)
 end
 
+def input_to_index(input)
+  index = input-1;
+end
+
 def ask_for_input()
   user_input = gets().chomp
 end
