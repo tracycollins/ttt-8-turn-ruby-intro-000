@@ -2,7 +2,6 @@ def turn(board)
   display_board(board)
   move_is_valid = false
   value = "X"
-  puts "Please enter 1-9:"
   until move_is_valid do
     puts "Please enter 1-9:"
     input = ask_for_input
