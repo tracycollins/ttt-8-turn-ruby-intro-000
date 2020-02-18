@@ -7,7 +7,7 @@ def input_to_index(input)
 end
 
 def ask_for_input()
-  user_input = gets().chomp
+  user_input = gets.chomp
 end
 
 def display_board(board)
