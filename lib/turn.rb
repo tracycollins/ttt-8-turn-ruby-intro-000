@@ -15,9 +15,9 @@ def turn(board)
 end
 
 def move(board, index, value = "X")
-  if (valid_move?(board, index))
+  # if (valid_move?(board, index))
     board[index] = value
-  end
+  # end
 end
 
 def valid_move?(board, index)
