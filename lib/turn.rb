@@ -2,6 +2,12 @@ def turn(board)
   display_board(board)
 end
 
+def move(board, index, value = "X")
+  if (valid_move?(board, index))
+    board[index] = value
+  end
+end
+
 def valid_move?(board, index)
   if (index < 0 || index > 8)
     return false
